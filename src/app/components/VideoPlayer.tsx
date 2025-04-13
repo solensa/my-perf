@@ -49,7 +49,7 @@ export function VideoPlayer({ videoSrc }: VideoPlayerProps) {
       <video
         ref={videoRef}
         src={videoSrc}
-        className="w-full h-auto "
+        className="w-full h-auto transform -translate-y-[33px] clip-path-[inset(33px_0_33px_0)]"
         playsInline
         muted
         preload="auto"

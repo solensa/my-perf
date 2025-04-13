@@ -23,19 +23,10 @@ export function TabContent({ activeTab }: TabContentProps) {
       </div>
 
       {/* Fixed size container for media */}
-      <div className="w-[1024px] h-[576px] rounded-4xl overflow-hidden shadow-2xl border-8 border-white/40 drop-shadow-[0_0_10px_rgba(255,237,0,0.6)] z-20">
+      <div className="w-[1024px] h-[517px] rounded-4xl overflow-hidden shadow-2xl border-8 border-white/40 drop-shadow-[0_0_10px_rgba(255,237,0,0.6)] z-20">
         {activeTab === "coach" && <VideoPlayer videoSrc={content.coach.videoSrc} />}
         {activeTab === "role-plays" && <VideoPlayer videoSrc={content["role-plays"].videoSrc} />}
-        {activeTab === "goal" && (
-          <Image
-            src={content.goal.mediaSrc || "/placeholder.svg"}
-            alt={content.goal.title}
-            width={1024}
-            height={576}
-            className="w-full h-full object-cover"
-            priority
-          />
-        )}
+        {activeTab === "goal" && <VideoPlayer videoSrc={content["goal"].videoSrc} />}
       </div>
     </div>
   );

@@ -12,19 +12,20 @@ export type TabType = "coach" | "role-plays" | "goal";
 export const content = {
   coach: {
     title: "AI Coach in SuccessFactors",
-    description: "Get personalized coaching feedback to improve your skills",
-    videoSrc: "/mp-vid.mp4", // Fixed the path to use public directory
+    description: "Improve your goal writing with the help of the AI Coach",
+    videoSrc: "/mp-coach.mp4", // Fixed the path to use public directory
   },
   "role-plays": {
     title: "AI Role-Plays On LinkedIn Learning",
-    description: "Role-play performance conversations with real-time feedback",
-    videoSrc: "/mp-vid.mp4",
+    description:
+      "Role-play performance conversations with real-time feedback and learning suggestions",
+    videoSrc: "/mp-rp.mp4",
     buttonText: "Try It",
   },
   goal: {
     title: "Goal Sharing in SuccessFactors",
     description: "Share and track goals with your team for better alignment",
-    mediaSrc: "/collaborative-goal-dashboard.png",
+    videoSrc: "/mp-share.mp4",
   },
 };
 
