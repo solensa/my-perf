@@ -32,8 +32,10 @@ export default function WhatsNewPage() {
   const [activeTab, setActiveTab] = useState<TabType>("coach");
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-teal-950 to-black text-white flex flex-col items-center px-4 py-12">
-      {/* <DecorativeElements /> */}
+    <div className="relative min-h-screen bg-black text-white flex flex-col items-center px-4 py-12 overflow-hidden">
+      {/* Gradient circle behind toggle */}
+      <div className="absolute top-[0] left-1/2 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-[radial-gradient(circle,#00a7b5_0%,#000000_70%)] opacity-30" />
+
       <Header />
       <TabToggle activeTab={activeTab} setActiveTab={setActiveTab} />
 

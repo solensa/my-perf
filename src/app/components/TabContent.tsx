@@ -15,8 +15,8 @@ export function TabContent({ activeTab }: TabContentProps) {
       <div className="h-[68px] ">
         {activeTab === "role-plays" && (
           <button
-            className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-8 rounded-md transition-colors"
-            onClick={() => window.open("https://www.linkedin.com/learning", "_blank")}
+            className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium py-2 px-8 rounded-md transition-colors cursor-pointer"
+            onClick={() => window.open("https://www.linkedin.com/learning/ai-coaching", "_blank")}
           >
             {content["role-plays"].buttonText}
           </button>

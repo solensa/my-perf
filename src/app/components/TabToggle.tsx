@@ -9,7 +9,7 @@ interface TabToggleProps {
 export function TabToggle({ activeTab, setActiveTab }: TabToggleProps) {
   return (
     <div className="relative w-full max-w-3xl mb-8">
-      <div className="bg-black/30 backdrop-blur-sm rounded-full p-1.5 flex">
+      <div className="bg-black/30 backdrop-blur-sm rounded-full p-1.5 flex border border-[#3B3B3B]">
         <button
           onClick={() => setActiveTab("coach")}
           className={cn(
