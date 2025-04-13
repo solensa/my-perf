@@ -1,4 +1,3 @@
-import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { TabType, content } from "../toggle";
 import { VideoPlayer } from "./VideoPlayer";
