@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TabType, content } from "../toggle";
 import { VideoPlayer } from "./VideoPlayer";
 
