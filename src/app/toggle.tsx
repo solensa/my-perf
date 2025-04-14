@@ -19,7 +19,7 @@ export const content = {
     title: "AI Role-Plays On LinkedIn Learning",
     description:
       "Role-play performance conversations with real-time feedback and learning suggestions",
-    videoSrc: "/mp-rp.mp4",
+    videoSrc: "/mp-rp2.mp4",
     buttonText: "Try It",
   },
   goal: {
