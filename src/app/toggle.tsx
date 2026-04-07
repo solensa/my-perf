@@ -7,7 +7,7 @@ import { Header } from "./components/Header";
 import Image from "next/image";
 // import { DecorativeElements } from "./components/DecorativeElements";
 
-export type TabType = "coach" | "role-plays" | "goal";
+export type TabType = "coach" | "role-plays" | "goal" | "feedback";
 
 export const content = {
   coach: {
@@ -26,6 +26,11 @@ export const content = {
     title: "Goal Sharing in SuccessFactors",
     description: "Share and track goals with your team for better alignment",
     videoSrc: "/mp-share.mp4",
+  },
+  feedback: {
+    title: "AI Feedback in SuccessFactors",
+    description: "Get instant feedback on your performance conversations to continuously improve",
+    videoSrc: "/mp-fb.mp4",
   },
 };
 

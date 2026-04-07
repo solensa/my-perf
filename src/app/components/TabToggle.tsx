@@ -16,7 +16,7 @@ export function TabToggle({ activeTab, setActiveTab }: TabToggleProps) {
             "flex-1 py-3 px-2 rounded-full text-center transition-all duration-200 text-sm cursor-pointer",
             activeTab === "coach"
               ? "bg-white/20 text-white border border-white/20"
-              : "text-gray-400 hover:text-white"
+              : "text-gray-400 hover:text-white",
           )}
         >
           AI Coach in SuccessFactors
@@ -27,7 +27,7 @@ export function TabToggle({ activeTab, setActiveTab }: TabToggleProps) {
             "flex-1 py-3 px-2 rounded-full text-center transition-all duration-200 text-sm cursor-pointer",
             activeTab === "role-plays"
               ? "bg-white/20 text-white border border-white/20"
-              : "text-gray-400 hover:text-white"
+              : "text-gray-400 hover:text-white",
           )}
         >
           AI Role-Plays On LinkedIn Learning
@@ -38,10 +38,21 @@ export function TabToggle({ activeTab, setActiveTab }: TabToggleProps) {
             "flex-1 py-3 px-2 rounded-full text-center transition-all duration-200 text-sm cursor-pointer",
             activeTab === "goal"
               ? "bg-white/20 text-white border border-white/20"
-              : "text-gray-400 hover:text-white"
+              : "text-gray-400 hover:text-white",
           )}
         >
           Goal Sharing in SuccessFactors
+        </button>
+        <button
+          onClick={() => setActiveTab("feedback")}
+          className={cn(
+            "flex-1 py-3 px-2 rounded-full text-center transition-all duration-200 text-sm cursor-pointer",
+            activeTab === "feedback"
+              ? "bg-white/20 text-white border border-white/20"
+              : "text-gray-400 hover:text-white",
+          )}
+        >
+          AI Feedback in SuccessFactors
         </button>
       </div>
     </div>

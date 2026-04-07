@@ -26,6 +26,7 @@ export function TabContent({ activeTab }: TabContentProps) {
         {activeTab === "coach" && <VideoPlayer videoSrc={content.coach.videoSrc} />}
         {activeTab === "role-plays" && <VideoPlayer videoSrc={content["role-plays"].videoSrc} />}
         {activeTab === "goal" && <VideoPlayer videoSrc={content["goal"].videoSrc} />}
+        {activeTab === "feedback" && <VideoPlayer videoSrc={content["feedback"].videoSrc} />}
       </div>
     </div>
   );
