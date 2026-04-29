@@ -52,7 +52,7 @@ export function TabToggle({ activeTab, setActiveTab }: TabToggleProps) {
               : "text-gray-400 hover:text-white",
           )}
         >
-          AI Feedback in SuccessFactors
+          Feedback in SuccessFactors
         </button>
       </div>
     </div>
